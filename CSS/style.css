@@ -1,6 +1,8 @@
 body {
     background-color: #1A1A1A;
     color: white;
+    width: 100%;
+    height: 100%;
 }
 
 .nav-bar {
@@ -14,14 +16,64 @@ body {
     text-decoration: none;
 }
 
-.form-inline .form-control {
-    padding: 5px;
-    margin-right: 10px;
-}
 
 .nav-bar div img {
     margin-left: 10px;
 }
+
+.icons-container {
+    display: flex;
+}
+
+/* Estilo do avatar do usuário */
+.usuario {
+    position: relative;
+    /* Necessário para o posicionamento do menu suspenso */
+    display: flex;
+    align-items: center;
+    /* Alinha o avatar e o menu na mesma linha */
+}
+
+/* Avatar do usuário */
+.avatar {
+    width: 35px;
+    height: 35px;
+    margin-right: 20px;
+}
+
+.avatar img {
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+/* Menu de opções */
+.opcoes {
+    display: none;
+    position: absolute;
+    top: 40px;
+    /* Ajusta a posição do menu */
+    left: -10px;
+    background-color: #222222;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    z-index: 10;
+    /* Garante que o menu apareça acima dos outros elementos */
+}
+
+.opcoes ul {
+    display: inline-block;
+    list-style: none;
+    padding: 10px;
+    text-align: left;
+    /* Alinha o texto das opções à esquerda */
+}
+
+.opcoes.show {
+    display: block;
+    /* Exibe o menu */
+}
+
 
 p {
     margin-top: 30px;
@@ -31,6 +83,8 @@ p {
 .container {
     margin-top: 50px;
 }
+
+
 
 .card {
     background-color: #444;
