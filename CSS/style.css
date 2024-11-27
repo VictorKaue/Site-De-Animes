@@ -74,6 +74,9 @@ body {
     /* Exibe o menu */
 }
 
+h3{
+    margin-top: 20px;
+}
 
 p {
     margin-top: 30px;
@@ -84,7 +87,13 @@ p {
     margin-top: 50px;
 }
 
+.margem-conteudo-principal{
+    margin-left: 5%;
+} 
 
+.centralizar{
+    margin-left: 6%;
+}
 
 .card {
     background-color: #444;
@@ -106,4 +115,9 @@ p {
 
 .btn-primary:hover {
     background-color: #008fcc;
+}
+
+.recently-released img{
+    justify-content: space-between;
+    margin-right: 10px;
 }
